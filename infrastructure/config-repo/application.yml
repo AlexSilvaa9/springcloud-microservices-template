@@ -1,6 +1,5 @@
 # Configuraciones compartidas para todos los servicios
 
-# Configuración de logging
 logging:
   pattern:
     console: "%clr(%d{HH:mm:ss.SSS}){faint} %clr(%-5level) %clr(%logger{36}){cyan} - %msg%n"
@@ -8,7 +7,6 @@ logging:
     org.springframework.cloud: INFO
     com.netflix: INFO
 
-# Configuración de actuator
 management:
   endpoints:
     web:
@@ -17,4 +15,3 @@ management:
   endpoint:
     health:
       show-details: always
-
