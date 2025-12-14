@@ -37,7 +37,7 @@ eureka:
     instance:
       prefer-ip-address: true
 
-0
+
 resilience4j:
   circuitbreaker:
     instances:

@@ -4,52 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e77696f-e307-4867-83b6-44be6a0bf308" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/config-repo/gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/config-repo/gateway-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/config-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/config-server/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/config-server/target/classes/com/microservices/config/ConfigServerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/config-server/target/config-server-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/config-server/target/config-server-1.0.0.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/config-server/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/config-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/config-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/eureka-server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/eureka-server/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/eureka-server/target/classes/com/microservices/eureka/EurekaServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/eureka-server/target/classes/com/microservices/eureka/EurekaServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/eureka-server/target/eureka-server-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/eureka-server/target/eureka-server-1.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/eureka-server/target/eureka-server-1.0.0.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/eureka-server/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/eureka-server/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/gateway-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/gateway-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/gateway-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/gateway-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/gateway-service/target/classes/com/microservices/gateway/GatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/gateway-service/target/classes/com/microservices/gateway/GatewayApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/gateway-service/target/gateway-service-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/gateway-service/target/gateway-service-1.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/gateway-service/target/gateway-service-1.0.0.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/gateway-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/gateway-service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/log-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/log-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/target/log-service-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/log-service/target/log-service-1.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/target/log-service-1.0.0.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/log-service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/log-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cart-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cart-service/target/cart-service-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/target/cart-service-1.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cart-service/target/cart-service-1.0.0.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cart-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cart-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/catalog-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/catalog-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/catalog-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/catalog-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/catalog-service/target/catalog-service-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/services/catalog-service/target/catalog-service-1.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/catalog-service/target/catalog-service-1.0.0.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/catalog-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/services/catalog-service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/catalog-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/services/catalog-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="5e77696f-e307-4867-83b6-44be6a0bf308" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
