@@ -5,42 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e77696f-e307-4867-83b6-44be6a0bf308" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/config-repo/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/config-repo/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/config-repo/log-service.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/config-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/gateway-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/src/main/java/com/microservices/log/LogServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/src/main/java/com/microservices/log/controller/LogController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/src/main/java/com/microservices/log/model/ApplicationLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/src/main/java/com/microservices/log/repository/LogRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/src/main/java/com/microservices/log/service/LogService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/target/classes/com/microservices/log/LogServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/target/classes/com/microservices/log/controller/LogController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/target/classes/com/microservices/log/model/ApplicationLog$LogLevel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/target/classes/com/microservices/log/model/ApplicationLog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/target/classes/com/microservices/log/repository/LogRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/target/classes/com/microservices/log/service/LogService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/target/log-service-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/log-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/logs/cart-service.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/logs/catalog-service.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/logs/config-server.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/logs/eureka-server.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/logs/gateway-service.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/logs/log-service.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/catalog-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/catalog-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/catalog-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/catalog-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/config-server/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/config-server/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/eureka-server/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/eureka-server/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/eureka-server/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/gateway-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/gateway-service/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cart-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/catalog-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/catalog-service/src/main/resources/logback-spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +41,17 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/alex/Documents/apuntes_extra/microservices-template"
+    "last_opened_file_path": "/home/alex/Documents/apuntes_extra/microservices-template/services/catalog-service/src/main/resources"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/catalog-service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/services/cart-service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/infrastructure/gateway-service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/infrastructure/eureka-server/src/main/resources" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.CatalogServiceApplication">
     <configuration name="CatalogServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.microservices.catalog.CatalogServiceApplication" />
@@ -130,8 +109,8 @@
       <list>
         <item itemvalue="Application.CatalogServiceApplication" />
         <item itemvalue="Application.GatewayApplication" />
-        <item itemvalue="Application.ConfigServerApplication" />
         <item itemvalue="Application.EurekaServerApplication" />
+        <item itemvalue="Application.ConfigServerApplication" />
       </list>
     </recent_temporary>
   </component>
