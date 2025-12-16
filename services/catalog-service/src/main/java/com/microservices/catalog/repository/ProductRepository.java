@@ -7,19 +7,19 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.microservices.catalog.model.Product;
+import com.microservices.catalog.model.ProductEntity;
 
 @Repository
-public interface ProductRepository extends JpaRepository<Product, Long> {
+public interface ProductRepository extends JpaRepository<ProductEntity, Long> {
 
-    List<Product> findByActiveTrue();
+    List<ProductEntity> findByActiveTrue();
 
-    List<Product> findByCategoryAndActiveTrue(String category);
+    List<ProductEntity> findByCategoryAndActiveTrue(String category);
 
-    @Query("SELECT p FROM Product p WHERE p.name LIKE %:name% AND p.active = true")
-    List<Product> findByNameContainingAndActiveTrue(@Param("name") String name);
+    @Query("SELECT p FROM ProductEntity p WHERE p.name LIKE %:name% AND p.active = true")
+    List<ProductEntity> findByNameContainingAndActiveTrue(@Param("name") String name);
 
-    @Query("SELECT DISTINCT p.category FROM Product p WHERE p.active = true")
+    @Query("SELECT DISTINCT p.category FROM ProductEntity p WHERE p.active = true")
     List<String> findDistinctCategories();
 
 }

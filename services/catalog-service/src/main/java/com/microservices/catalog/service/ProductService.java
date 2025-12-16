@@ -2,76 +2,100 @@ package com.microservices.catalog.service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.microservices.catalog.model.Product;
-import com.microservices.catalog.repository.ProductRepository;
+import com.microservices.catalog.dao.ProductDAO;
+import com.microservices.catalog.dto.ProductDTO;
+import com.microservices.catalog.mapper.ProductMapper;
+import com.microservices.catalog.model.ProductEntity;
 
 @Service
 @Transactional
 public class ProductService {
 
     @Autowired
-    private ProductRepository productRepository;
+    private ProductDAO productDAO;
 
-    public List<Product> getAllActiveProducts() {
-        return productRepository.findByActiveTrue();
+    @Autowired
+    private ProductMapper productMapper;
+
+    // Obtener todos los productos activos como DTOs
+    public List<ProductDTO> getAllActiveProducts() {
+        List<ProductEntity> entities = productDAO.findAllActive();
+        return entities.stream()
+                .map(productMapper::toDTO)
+                .collect(Collectors.toList());
     }
 
-    public Optional<Product> getProductById(Long id) {
-        return productRepository.findById(id);
+    // Obtener un producto por id
+    public Optional<ProductDTO> getProductById(Long id) {
+        return productDAO.findById(id).map(productMapper::toDTO);
     }
 
-    public List<Product> getProductsByCategory(String category) {
-        return productRepository.findByCategoryAndActiveTrue(category);
+    // Productos por categoria
+    public List<ProductDTO> getProductsByCategory(String category) {
+        List<ProductEntity> entities = productDAO.findByCategory(category);
+        return entities.stream()
+                .map(productMapper::toDTO)
+                .collect(Collectors.toList());
     }
 
-    public List<Product> searchProductsByName(String name) {
-        return productRepository.findByNameContainingAndActiveTrue(name);
+    // Buscar por nombre
+    public List<ProductDTO> searchProductsByName(String name) {
+        List<ProductEntity> entities = productDAO.searchByName(name);
+        return entities.stream()
+                .map(productMapper::toDTO)
+                .collect(Collectors.toList());
     }
 
+    // Listado de categorias
     public List<String> getAllCategories() {
-        return productRepository.findDistinctCategories();
+        return productDAO.findDistinctCategories();
     }
 
-    public Product saveProduct(Product product) {
-        return productRepository.save(product);
+    // Guardar producto (recibe DTO y devuelve DTO)
+    public ProductDTO saveProduct(ProductDTO productDto) {
+        ProductEntity entity = productMapper.fromDTO(productDto);
+        ProductEntity saved = productDAO.save(entity);
+        return productMapper.toDTO(saved);
     }
 
-    public Product updateProduct(Long id, Product productDetails) {
-        Optional<Product> optionalProduct = productRepository.findById(id);
+    // Actualizar producto
+    public ProductDTO updateProduct(Long id, ProductDTO productDto) {
+        Optional<ProductEntity> optionalProduct = productDAO.findById(id);
         if (optionalProduct.isPresent()) {
-            Product product = optionalProduct.get();
-            product.setName(productDetails.getName());
-            product.setDescription(productDetails.getDescription());
-            product.setPrice(productDetails.getPrice());
-            product.setStock(productDetails.getStock());
-            product.setCategory(productDetails.getCategory());
-            product.setImageUrl(productDetails.getImageUrl());
-            return productRepository.save(product);
+            ProductEntity product = optionalProduct.get();
+            ProductEntity details = productMapper.fromDTO(productDto);
+            // Copiar campos relevantes
+
+            ProductEntity updated = productDAO.save(product);
+            return productMapper.toDTO(updated);
         }
         return null;
     }
 
+    // Borrado lógico
     public void deleteProduct(Long id) {
-        Optional<Product> optionalProduct = productRepository.findById(id);
+        Optional<ProductEntity> optionalProduct = productDAO.findById(id);
         if (optionalProduct.isPresent()) {
-            Product product = optionalProduct.get();
+            ProductEntity product = optionalProduct.get();
             product.setActive(false);
-            productRepository.save(product);
+            productDAO.save(product);
         }
     }
 
+    // Actualizar stock
     public boolean updateStock(Long productId, Integer quantity) {
-        Optional<Product> optionalProduct = productRepository.findById(productId);
+        Optional<ProductEntity> optionalProduct = productDAO.findById(productId);
         if (optionalProduct.isPresent()) {
-            Product product = optionalProduct.get();
+            ProductEntity product = optionalProduct.get();
             if (product.getStock() >= quantity) {
                 product.setStock(product.getStock() - quantity);
-                productRepository.save(product);
+                productDAO.save(product);
                 return true;
             }
         }
