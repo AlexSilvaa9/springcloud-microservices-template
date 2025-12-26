@@ -2,7 +2,7 @@ server:
   port: 0
 
 app:
-  environment: prod
+  environment: local
 
 spring:
   application:
