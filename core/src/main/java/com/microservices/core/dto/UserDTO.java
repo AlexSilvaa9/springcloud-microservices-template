@@ -1,9 +1,9 @@
-package com.microservices.user.dto;
-
-import java.time.LocalDateTime;
-import java.util.UUID;
+package com.microservices.core.dto;
 
 import lombok.Data;
+
+import java.util.UUID;
+
 
 /**
  * DTO que expone la información pública del usuario (sin password).
@@ -13,6 +13,6 @@ public class UserDTO {
     private UUID id;
     private String email;
     private String role;
-    private LocalDateTime createdAt;
+    private boolean active;
 
 }

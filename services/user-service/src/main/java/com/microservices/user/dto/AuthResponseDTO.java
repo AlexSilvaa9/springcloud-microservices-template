@@ -1,5 +1,6 @@
 package com.microservices.user.dto;
 
+import com.microservices.core.dto.UserDTO;
 import lombok.Data;
 
 /**

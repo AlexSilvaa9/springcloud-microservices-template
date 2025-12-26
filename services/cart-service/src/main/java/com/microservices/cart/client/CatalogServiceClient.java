@@ -1,5 +1,6 @@
 package com.microservices.cart.client;
 
+import com.microservices.core.dto.ProductDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface CatalogServiceClient {
 
     @GetMapping("/products/{id}")
-    ProductDto getProductById(@PathVariable("id") Long id);
+    ProductDTO getProductById(@PathVariable("id") Long id);
 
     @PostMapping("/products/{id}/update-stock")
     Boolean updateStock(@PathVariable("id") Long id, @RequestParam Integer quantity);

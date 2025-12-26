@@ -1,7 +1,7 @@
 package com.microservices.catalog.mapper;
 
+import com.microservices.core.dto.ProductDTO;
 import org.mapstruct.Mapper;
-import com.microservices.catalog.dto.ProductDTO;
 import com.microservices.catalog.model.ProductEntity;
 
 /**

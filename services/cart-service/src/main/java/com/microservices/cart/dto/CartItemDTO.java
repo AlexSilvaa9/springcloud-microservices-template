@@ -4,12 +4,16 @@ import java.math.BigDecimal;
 
 import lombok.Data;
 import lombok.Builder;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 
 /**
  * DTO que representa un item del carrito expuesto al cliente.
  */
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class CartItemDTO {
     private Long id;
     private Long productId;
@@ -17,4 +21,3 @@ public class CartItemDTO {
     private BigDecimal price;
     private Integer quantity;
 }
-

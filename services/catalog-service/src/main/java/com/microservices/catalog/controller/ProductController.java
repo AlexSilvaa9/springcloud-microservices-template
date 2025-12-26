@@ -1,8 +1,7 @@
 package com.microservices.catalog.controller;
 
-import com.microservices.catalog.dto.ProductDTO;
 import com.microservices.catalog.service.ProductService;
-import lombok.AllArgsConstructor;
+import com.microservices.core.dto.ProductDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +14,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/products")
 @CrossOrigin(origins = "*")
-@AllArgsConstructor
 public class ProductController {
 
 

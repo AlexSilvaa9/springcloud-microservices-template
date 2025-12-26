@@ -2,7 +2,6 @@ package com.microservices.user.mapper;
 
 import org.mapstruct.Mapper;
 
-import com.microservices.user.dto.UserDTO;
 import com.microservices.user.model.UserEntity;
 
 /**

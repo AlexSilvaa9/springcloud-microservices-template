@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.microservices.user.dto.AuthRequestDTO;
-import com.microservices.user.dto.AuthResponseDTO;
-import com.microservices.user.dto.UserDTO;
 import com.microservices.user.service.UserService;
 
 /**

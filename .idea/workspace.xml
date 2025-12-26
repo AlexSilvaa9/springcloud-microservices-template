@@ -5,16 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e77696f-e307-4867-83b6-44be6a0bf308" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/mapper/ShoppingCartMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/config-repo/user-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/config-repo/user-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/config-repo/gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/config-repo/gateway-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/client/CatalogServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/client/CatalogServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/client/UserServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/client/UserServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/client/UserServiceClientFallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/dto/CartItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/dto/CartItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/dto/ShoppingCartDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/dto/ShoppingCartDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/microservices/core/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/mapper/CartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/mapper/CartItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/model/CartItemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/model/CartItemEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/model/ShoppingCartEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/model/ShoppingCartEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/src/main/java/com/microservices/cart/service/ShoppingCartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cart-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cart-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/services/cart-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/catalog-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/catalog-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/catalog-service/src/main/java/com/microservices/catalog/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/catalog-service/src/main/java/com/microservices/catalog/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/catalog-service/src/main/java/com/microservices/catalog/dto/GenericResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/catalog-service/src/main/java/com/microservices/catalog/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/microservices/core/dto/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/catalog-service/src/main/java/com/microservices/catalog/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/catalog-service/src/main/java/com/microservices/catalog/mapper/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/catalog-service/src/main/java/com/microservices/catalog/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/catalog-service/src/main/java/com/microservices/catalog/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/catalog-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/catalog-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/catalog-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/catalog-service/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/config/DataInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/dto/AuthRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/dto/AuthRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/dto/AuthResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/dto/AuthResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/model/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/model/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/dto/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,33 +65,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CatalogServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.cart-service [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.catalog-service [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.gateway-service [install].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/alex/Documents/apuntes_extra/microservices-template/services/user-service/src/main/resources&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/alex/Documents/apuntes_extra/microservices-template/services/catalog-service/user-service/src/main/java/com/microservices/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CartServiceApplication.executor": "Run",
+    "Application.CartServiceApplicationLocal.executor": "Run",
+    "Application.CatalogServiceApplication.executor": "Run",
+    "Application.ConfigServerApplication.executor": "Run",
+    "Application.EurekaServerApplication.executor": "Run",
+    "Application.GatewayApplication.executor": "Run",
+    "Maven.cart-service [install].executor": "Run",
+    "Maven.catalog-service [install].executor": "Run",
+    "Maven.core [install].executor": "Run",
+    "Maven.gateway-service [install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/alex/Documents/apuntes_extra/microservices-template/infrastructure/config-repo",
+    "onboarding.tips.debug.path": "/home/alex/Documents/apuntes_extra/microservices-template/core/src/main/java/com/microservices/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/services/user-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/infrastructure/config-repo" />
+      <recent name="$PROJECT_DIR$/services/user-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/services/catalog-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/services/cart-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/infrastructure/gateway-service/src/main/resources" />
@@ -73,8 +102,27 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/services" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.microservices.cart.mapper" />
+      <recent name="dto" />
+      <recent name="com.microservices.cart.dto" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.ConfigServerApplication">
+  <component name="RunManager" selected="Application.CatalogServiceApplication">
+    <configuration name="CartServiceApplicationLocal" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.microservices.cart.CartServiceApplication" />
+      <module name="cart-service" />
+      <option name="VM_PARAMETERS" value="--spring.profiles.active=local " />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.microservices.cart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CatalogServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.microservices.catalog.CatalogServiceApplication" />
       <module name="catalog-service" />
@@ -127,12 +175,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.CartServiceApplicationLocal" />
+      <item itemvalue="Application.CatalogServiceApplication" />
+      <item itemvalue="Application.ConfigServerApplication" />
+      <item itemvalue="Application.EurekaServerApplication" />
+      <item itemvalue="Application.GatewayApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConfigServerApplication" />
+        <item itemvalue="Application.CatalogServiceApplication" />
         <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.EurekaServerApplication" />
-        <item itemvalue="Application.CatalogServiceApplication" />
+        <item itemvalue="Application.ConfigServerApplication" />
+        <item itemvalue="Application.CartServiceApplicationLocal" />
       </list>
     </recent_temporary>
   </component>

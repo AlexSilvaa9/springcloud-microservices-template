@@ -10,7 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.microservices.user.dao.UserDAO;
 import com.microservices.user.dto.AuthRequestDTO;
 import com.microservices.user.dto.AuthResponseDTO;
-import com.microservices.user.dto.UserDTO;
 import com.microservices.user.mapper.UserMapper;
 import com.microservices.user.model.UserEntity;
 import com.microservices.user.security.JwtUtil;

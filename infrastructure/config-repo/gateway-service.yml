@@ -23,12 +23,7 @@ spring:
             - Path=/api/cart/**
           filters:
             - StripPrefix=2
-        - id: log-service
-          uri: lb://log-service
-          predicates:
-            - Path=/api/logs/**
-          filters:
-            - StripPrefix=2
+
 
 eureka:
   client:

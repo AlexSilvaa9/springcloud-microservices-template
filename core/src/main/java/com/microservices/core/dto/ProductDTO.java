@@ -1,11 +1,12 @@
-package com.microservices.catalog.dto;
+package com.microservices.core.dto;
 
-import java.math.BigDecimal;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import lombok.Builder;
 import lombok.Data;
+
+import java.math.BigDecimal;
 
 /**
  * DTO que representa los datos expuestos de un producto en la API.

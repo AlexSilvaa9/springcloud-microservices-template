@@ -4,12 +4,12 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import com.microservices.core.dto.ProductDTO;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.microservices.catalog.dao.ProductDAO;
-import com.microservices.catalog.dto.ProductDTO;
 import com.microservices.catalog.mapper.ProductMapper;
 import com.microservices.catalog.model.ProductEntity;
 

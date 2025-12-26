@@ -2,6 +2,9 @@ server:
   port: 0
 
 spring:
+  sql:
+    init:
+      mode: always
   application:
     name: catalog-service
   datasource:
@@ -14,6 +17,8 @@ spring:
     hibernate:
       ddl-auto: create-drop
     show-sql: true
+    defer-datasource-initialization: true
+
   h2:
     console:
       enabled: true
