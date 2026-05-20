@@ -1,4 +1,4 @@
-# 🚀 Microservices Platform – Arquitectura Modular para Producción
+# Microservices Platform – Arquitectura Modular para Producción
 
 > Una plataforma de referencia que integra microservicios backend, frontend Angular moderno e infraestructura cloud-native. Diseñada para demostrar cómo construir sistemas distribuidos escalables, resilientes y mantenibles.
 
@@ -375,21 +375,47 @@ Disponibles en: [Demo en vivo](https://alexsilvaa9.github.io/modern-microservice
 
 ---
 
-## 🗺️ Roadmap
 
-| Estado | Feature                           |
-| ------ | --------------------------------- |
-| ✅     | Core arquitectónico funcional    |
-| ✅     | Autenticación híbrida + JWT     |
-| ✅     | Microservicios desacoplados       |
-| ✅     | Frontend SSR + traducción        |
-| ✅     | Auditoría e idempotencia         |
-| ✅     | Kubernetes ready                  |
-| ⏳     | Monitoring (Prometheus + Grafana) |
-| ⏳     | Distributed tracing (Jaeger)      |
-| ✅     | CI/CD pipeline (Jenkins)          |
-| ✅     | Infraestructura como Código (Terraform) |
-| ✅     | Testes e2e (Playwright)           |
+## 📊 Observabilidad
+
+La arquitectura de la plataforma está diseñada para un sistema completo de observabilidad basado en **logs, métricas y tracing distribuido**, siguiendo un enfoque cloud-native en Kubernetes.
+
+Actualmente, por limitaciones de recursos en el entorno de desarrollo, solo se han implementado los **logs estructurados en formato JSON**, enviados a `stdout` desde los microservicios Spring Boot.
+
+### 🧾 Logs (implementado)
+
+* Formato: JSON estructurado desde **Spring Boot (Logback + encoder JSON)**
+* Flujo:
+
+  ```
+  Spring Boot → stdout → Kubernetes logs → Fluent Bit → Loki → Grafana
+  ```
+* Preparado para búsqueda y centralización en **Loki**
+
+---
+
+### 📉 Métricas (diseñado, no desplegado)
+
+* Tecnología: **Spring Boot Actuator + Micrometer → Prometheus**
+* Flujo previsto:
+
+  ```
+  Spring Boot → /actuator/prometheus → Prometheus → Grafana
+  ```
+* Incluye métricas de HTTP, JVM, CPU, memoria y errores
+
+---
+
+### 🔍 Tracing distribuido (diseñado, no desplegado)
+
+* Tecnología: **OpenTelemetry → Tempo / Jaeger → Grafana**
+* Flujo previsto:
+
+  ```
+  Spring Boot → OpenTelemetry SDK/Agent → OTLP → Tempo → Grafana (traces)
+  ```
+* Preparado para correlación mediante `traceId` entre microservicios
+
 
 ---
 

@@ -1,29 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <!-- Tomamos el nombre del servicio de application.yml -->
-    <springProperty name="serviceName" source="spring.application.name"/>
 
-    <!-- Appender de consola -->
-    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} [%X{traceId:-},%X{spanId:-}] - %msg%n</pattern>
+
+    <springProperty scope="context"
+                    name="SERVICE_NAME"
+                    source="spring.application.name"
+                    defaultValue="unknown-service"/>
+
+    <appender name="JSON_CONSOLE"
+              class="ch.qos.logback.core.ConsoleAppender">
+
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+
+            <providers>
+
+                <timestamp>
+                    <fieldName>timestamp</fieldName>
+                    <timeZone>UTC</timeZone>
+                </timestamp>
+
+                <logLevel>
+                    <fieldName>level</fieldName>
+                </logLevel>
+
+                <threadName>
+                    <fieldName>thread</fieldName>
+                </threadName>
+
+                <loggerName>
+                    <fieldName>logger</fieldName>
+                </loggerName>
+
+                <message>
+                    <fieldName>message</fieldName>
+                </message>
+
+                <globalCustomFields>
+                    {
+                    "service": "${SERVICE_NAME}"
+                    }
+                </globalCustomFields>
+
+                <mdc>
+                    <includeMdcKeyName>traceId</includeMdcKeyName>
+                    <includeMdcKeyName>spanId</includeMdcKeyName>
+                    <includeMdcKeyName>requestId</includeMdcKeyName>
+                    <includeMdcKeyName>userId</includeMdcKeyName>
+                </mdc>
+
+
+                <stackTrace>
+                    <fieldName>stacktrace</fieldName>
+                </stackTrace>
+
+            </providers>
+
         </encoder>
     </appender>
 
-    <!-- Appender de archivo -->
-    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/${serviceName}.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>logs/${serviceName}-%d{yyyy-MM-dd}.log</fileNamePattern>
-            <maxHistory>30</maxHistory>
-        </rollingPolicy>
-        <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} [%X{traceId:-},%X{spanId:-}] - %msg%n</pattern>
-        </encoder>
-    </appender>
-
-    <!-- Root logger -->
     <root level="INFO">
-        <appender-ref ref="CONSOLE"/>
-        <appender-ref ref="FILE"/>
+        <appender-ref ref="JSON_CONSOLE"/>
     </root>
+
+
+    <logger name="org.springframework" level="WARN"/>
+    <logger name="org.apache.kafka" level="WARN"/>
+    <logger name="io.netty" level="WARN"/>
+
 </configuration>

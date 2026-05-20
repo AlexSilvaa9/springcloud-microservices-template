@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e77696f-e307-4867-83b6-44be6a0bf308" name="Changes" comment="chore: reorganización de carpetas">
-      <change afterPath="$PROJECT_DIR$/rateLimitTest.sh" afterDir="false" />
+    <list default="true" id="5e77696f-e307-4867-83b6-44be6a0bf308" name="Changes" comment="feat: rate limit implementado a nivel infraestructura">
+      <change afterPath="$PROJECT_DIR$/backend/services/user-service/src/main/resources/logback-spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/api-gateway-ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/api-gateway-ingress.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/services/cart-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/cart-service/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/services/mail-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/mail-service/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/services/order-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/order-service/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/services/product-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/product-service/src/main/resources/logback-spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +99,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/alex/Documents/apuntes_extra/microservices-template/services/user-service/src/main/java/com/microservices/user/model&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alex/Documents/apuntes_extra/microservices-template/backend/services/cart-service/src/main/resources&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;/home/alex/Documents/apuntes_extra/microservices-template/front/src/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -104,11 +109,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/services/cart-service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/backend/services/mail-service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/backend/services/order-service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/backend/services/user-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/services/user-service/src/main/java/com/microservices/user/model" />
-      <recent name="$PROJECT_DIR$/k8s/RBAC" />
-      <recent name="$PROJECT_DIR$/k8s" />
-      <recent name="$PROJECT_DIR$/services" />
-      <recent name="$PROJECT_DIR$/doc/diagrams" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend" />
@@ -349,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778698558068</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: rate limit implementado a nivel infraestructura">
+      <option name="closed" value="true" />
+      <created>1779311900119</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1779311900119</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -391,7 +404,8 @@
     <MESSAGE value="feat: implementado tablas de auditoría" />
     <MESSAGE value="refactor: idempotencia implementada con aspect oriented programming. organización de carpetas" />
     <MESSAGE value="chore: reorganización de carpetas" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: reorganización de carpetas" />
+    <MESSAGE value="feat: rate limit implementado a nivel infraestructura" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: rate limit implementado a nivel infraestructura" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
