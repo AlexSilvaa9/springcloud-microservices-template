@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e77696f-e307-4867-83b6-44be6a0bf308" name="Changes" comment="chore: reorganización de carpetas">
+      <change afterPath="$PROJECT_DIR$/rateLimitTest.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/services/mail-service/src/main/java/com/microservices/mail/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/mail-service/src/main/java/com/microservices/mail/service/MailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/configmap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/configmap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/api-gateway-ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/api-gateway-ingress.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
